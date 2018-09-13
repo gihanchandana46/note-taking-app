@@ -1,0 +1,49 @@
+<header class="clearfix">
+
+	<h2 class="well"> Edit Note Form</h2>
+
+</header>
+
+<div class="contenr-inner" >
+
+	<div class="contenr-inside" >
+
+		<div class="row" style=" margin: auto; width: 75%;  border: 3px solid green; ">
+
+			<div class="col-sm-8" >
+
+				<div class="form-group">
+					<label>Title</label>
+					<textarea type="text" id="noteTitle"  class="form-control"></textarea>
+				</div>
+
+				<div class="form-group">
+					<label>Body</label>
+					<textarea id="noteBody"  class="form-control" rows="12"></textarea>
+				</div>
+
+			</div>
+
+		</div>
+		<br />
+		
+		<button type="button" style=" position:absolute;left: 35%;"onclick="updateNote()" class="btn btn-md btn-info">
+			Edit Note
+		</button>
+		
+		<button type="button" style=" position:absolute;left: 50%;" onclick="deleteNote()" class="btn btn-md btn-danger">
+			Delete Note
+		</button>
+	
+
+	</div>
+
+</div>
+<script>
+	
+	$("#noteTitle").val(title);
+	$("#noteBody").val(notebody);
+	
+</script>
+
+

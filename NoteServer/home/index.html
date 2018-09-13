@@ -1,0 +1,135 @@
+﻿<html>
+
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>Welcome To Note Taking web application</title>
+
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/style_admin.css" type="text/css"/>
+		<link rel="stylesheet" href="../css/dataTables.bootstrap.min.css" >
+
+		<script src="../js/jquery-2.1.4.js"></script>
+		<script src="../js/jquery.dataTables.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/dataTables.responsive.min.js"></script>
+		<script src="../js/jquery.cookie.min.js"></script>
+		<script src="../js/notes_managment.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				// set trigger & container variables.
+
+				var trigger = $('#side-menu ul li a'), container = $('#content');
+
+				//fire on click
+				trigger.on('click', function() {
+					// set this for reuse
+
+					var $this = $(this), target = $this.data('target');
+					// load target page into container
+					container.load('components/' + target + '.html');
+
+					// Stop normal link behavior
+					//return false;
+				});
+
+			});
+
+		</script>
+	</head>
+
+	<body>
+
+		<div class="container-fluid display-table ">
+
+			<div class="row display-table-row">
+
+				<!-- Side menu-->
+				<div class="col-md-2 col-sm-1 hidden-sm hidden-xs display-table-cell valign-top " id="side-menu">
+
+					<h1 class="hidden-sm hidden-xs" style="color:#FFAB00"s>Welcome User</h1>
+					<ul>
+						<li class="link active">
+							<a data-target="home" id="clickhome"> <span class="glyphicon glyphicon-th" area-hidden="true"></span> <span>Home</span> </a>
+
+						</li>
+
+						<li class="link" >
+							<a data-target="CreateNote"> <span class="glyphicon glyphicon-list-alt" area-hidden="true"></span> <span class="hidden-sm hidden-xs">Create New Note</span> </a>
+
+						</li>
+
+						<li class="link goback-btn">
+							<a href="../index.html"> <span class="glyphicon glyphicon-chevron-left" ></span> <span class="hidden-sm hidden-xs">Go to Home</span> </a>
+
+						</li>
+
+					</ul>
+				</div>
+				<!--Main content-->
+				<div class="col-md-10 col-sm-11 display-table-cell valign-top ">
+					<div class="row">
+						<!--Nav Header-->
+						<header id="nav-header" class="clearfix">
+							<div class="col-md-5">
+								<nav class="navbar-default pull-left">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+
+									</button>
+								</nav>
+								<br>
+								<b>Welcome To Note Taking web application</b>
+
+							</div>
+							<div class="col-md-7">
+								<ul class="pull-right">
+									<li id="welcome"class="hidden-sm hidden-xs">
+
+									<li>
+										<a href="../index.html" class="logout"> <span class="glyphicon glyphicon-log-out" area-hidden="true"></span> logout </a>
+									</li>
+								</ul>
+						</header>
+					</div>
+
+					<!-- editable content-->
+					<div id="content">
+
+					</div>
+					<div>
+						<br>
+						<br>
+					</div>
+					<div class="row">
+						<footer id="admin-footer" class="clearfix">
+							<div class="pull-left">
+								<b>Copyright </b>&copy; 2018 Gihan Soft Systems
+							</div>
+							<div class="pull-right">
+								Developed by <a href="#" target="_blank"><strong>Gihan Wijesekara</strong></a>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+	</body>
+</html>
+
+<script>
+	
+	$(document).ready(function() {
+	
+	click();
+	
+});
+
+	
+	
+</script>

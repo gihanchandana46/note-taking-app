@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Note Taking Web Application</title>
+    <!--BootStrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--JS & jQuery-->
+   
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.min.js"></script>
+    <script src="js/notes_managment.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid" style="height:60px; background-color:#212121;">
+        <div class="row">
+            <div class="col-sm-3" style="height:60px; color:#F50004; padding:0px; z-index:2; " id="hLogo">
+                <a href="index.html"><img src="images/logo.png" height="70px"></a>
+            </div>
+            <div class="col-sm-9" align="right" style="height:60px;">
+                <ul>
+                    <li class="headBar"><a href="#Contact"><span class="glyphicon glyphicon-earphone"><span class="headerFontChange">&nbsp;&nbsp;ContactUs</span> </span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Begin navigation panel-->
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="85">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <a href="index.html" class="navbar-brand">	Note Taking Web Application</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#LoginModal" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Log in</a></li>
+                    <li><a href="#RegisterModal" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="LoginModal" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">User Login</h4>
+                        </br>
+                        <h5 class="modal-title">Cookies must be enabled in your browse to save username</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" id="loginUsername" placeholder="Enter username Here.." class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" id="loginPassword" placeholder="Enter Password Here.." class="form-control" required>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="submit" class="btn btn-success" onclick="checkloginMain();saveUserID();" data-dismiss="modal">Login</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="RegisterModal" role="dialog">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">User Registration</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" id="regUsername" placeholder="Enter Username Here.." class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" id="regPassword" placeholder="Enter Password Here.." class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" id="regCPassword" placeholder="Enter Confirm Password Here.." class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" onclick="createUser()" data-dismiss="modal">Register</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </nav>
+
+
+    <div class="container-fluid" style="height:500px; background-image:url(images/slideTest.jpg)">
+
+
+    </div>
+
+    <p align="right">&copy; 2018 Gihan Soft Systems. - Developed by <a href="#" target="_blank"><strong>Gihan Wijesekara</strong></a></p>
+
+
+    </footer>
+</body>
+</html>
+
+

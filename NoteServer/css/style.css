@@ -1,0 +1,25 @@
+/* removing navbar default rounded coners */
+.well{border-radius:0px !important; margin-bottom:2px !important;}
+.navbar{border-radius:0px !important; margin:0 !important;}
+	
+/* customizing footer */
+footer {background-color: #555  !important; color: white  !important; padding: 15px !important;}
+footer a:hover{color:#00C3FF  !important; text-decoration:none !important;}
+	
+/* affixing the nav bar */
+.affix {top: 0 !important; width: 100% !important;z-index:100 !important;}
+.affix + .container-fluid {padding-top: 10px !important;}
+
+/* navbar color re editing */
+.navbar-inverse .navbar-brand {color: #FFAB00 !important;}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {color: #FF6F00 !important;}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {color: #FFAB00 !important;}
+.headBar{color:#FFF !important; list-style-type:none !important; 
+			display:inline-block !important; 
+			padding:7px 10px !important; border-right:groove  !important; 
+			border-color:#393939 !important; }
+.headBar a{color:#C8C8C8 !important ;} .headBar a:hover{color:#FFAB00 !important;}
+.headerFontChange{font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif !important; font-size:smaller !important;}
+#hLogo a:hover{ opacity:0.95  !important;}

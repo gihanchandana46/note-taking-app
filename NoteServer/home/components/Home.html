@@ -1,0 +1,49 @@
+<div class="contenr-inner" >
+
+	<div class="contenr-inside">
+		<h3 class="well"> My Notes
+			
+		<button type="button" style="float: right;"onclick="loadCreateNote()" class="btn btn-md btn-info">
+			Create Note
+		</button></h3>
+
+		<form method="post">
+
+			<div class="table-responsive" >
+				<table class="table table-hover" id="noteTable" >
+					<thead>
+
+						<th idid="note">Note ID</th>
+						<th>Note Title</th>
+						<th>Date Created</th>
+						<th>Note Body</th>
+
+					</thead>
+					<tbody>
+
+					</tbody>
+
+				</table>
+			</div>
+			
+
+		</form>
+
+	</div>
+<button type="button" onclick="loadEditNote()" class="btn btn-md btn-info">	Edit Note	</button>
+</div>
+
+<script>
+	$(document).ready(function() {
+			
+		loadNotes();
+
+	});
+	
+	getTableData();
+	
+	
+	
+	
+</script>
+
