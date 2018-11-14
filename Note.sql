@@ -1,4 +1,4 @@
-
+/* Install-Package Microsoft.AspNet.WebApi.Cors*/
 
 CREATE TABLE note (
   id int NOT NULL identity(1,1)  ,
